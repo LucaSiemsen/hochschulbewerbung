@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerbung</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bewerbungsformular</h1>
+    <nav>
+      <a href="index.html">Startseite</a> |
+      <a href="bewerbung.html">Bewerbung</a> |
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="../backend/bewerbung.php">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="studiengang">Studiengang:</label><br>
+      <select id="studiengang" name="studiengang">
+        <option value="informatik">Informatik</option>
+        <option value="wirtschaft">Wirtschaft</option>
+        <option value="design">Design</option>
+      </select><br>
+
+      <button type="submit">Bewerben</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hochschule Bewerbung</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

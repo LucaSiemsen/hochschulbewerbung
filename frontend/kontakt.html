@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kontaktformular</h1>
+    <nav>
+      <a href="index.html">Startseite</a> |
+      <a href="bewerbung.html">Bewerbung</a> |
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="../backend/kontakt.php">
+      <label for="email">E-Mail:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="nachricht">Nachricht:</label><br>
+      <textarea id="nachricht" name="nachricht" required></textarea><br>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hochschule Bewerbung</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
