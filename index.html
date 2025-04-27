@@ -41,11 +41,100 @@
     </div>
     
     </section>
+    <section class="section">
+      <h2 class="section-title">Warum die Fachhochschule Kiel?</h2>
+      <p>Praxisnah studieren an einem der modernsten Campus Deutschlands. International vernetzt, innovativ, weltoffen – werde Teil unserer Community!</p>
+      
+      <div class="cards">
+        <div class="card">
+          <h3>Karrierechancen</h3>
+          <p>Top-Ausbildung für deinen erfolgreichen Start in Unternehmen weltweit.</p>
+        </div>
+        <div class="card">
+          <h3>Campusleben</h3>
+          <p>Moderne Lernräume, vielfältige Freizeitangebote und ein wunderschöner Standort direkt an der Kieler Förde.</p>
+        </div>
+        <div class="card">
+          <h3>Internationalität</h3>
+          <p>Erlebe Auslandserfahrungen mit unseren Erasmus-Partnerhochschulen weltweit.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section-title">Unsere Studierenden sagen:</h2>
+      <div class="cards">
+        <div class="card">
+          <p>„Das Campusleben hier ist einfach unschlagbar – und der Blick auf die Förde sowieso!“</p>
+          <strong>– Anna M., Wirtschaftsingenieurwesen</strong>
+        </div>
+        <div class="card">
+          <p>„Die FH Kiel hat mir viele Türen geöffnet – ich studiere jetzt ein Semester in Finnland.“</p>
+          <strong>– Lukas S., Informatik</strong>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section faq">
+      <h2 class="section-title">Fragen & Antworten zum Studium</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">Wie bewerbe ich mich für ein Studium an der FH Kiel?</button>
+        <div class="faq-answer">Über unser Onlineformular auf dieser Website. Zeugnisse und Lebenslauf hochladen – fertig!</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Welche Voraussetzungen muss ich erfüllen?</button>
+        <div class="faq-answer">Allgemeine Hochschulreife oder Fachhochschulreife. Teilweise Sprachkenntnisse je nach Studiengang nötig.</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Kann ich auch im Ausland studieren?</button>
+        <div class="faq-answer">Ja! Über Erasmus kannst du ein oder zwei Semester an einer unserer Partnerhochschulen verbringen.</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Wie hoch sind die Studiengebühren?</button>
+        <div class="faq-answer">An der FH Kiel fällt nur ein Semesterbeitrag an, keine zusätzlichen Studiengebühren!</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Welche Studiengänge werden angeboten?</button>
+        <div class="faq-answer">Technik, Wirtschaft, Sozialwesen, Medien, Agrarwirtschaft – und viele mehr!</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Wann ist die Bewerbungsfrist?</button>
+        <div class="faq-answer">Für das Wintersemester meist bis 15. Juli, für das Sommersemester bis 15. Januar.</div>
+      </div>
+    
+      <div class="faq-item">
+        <button class="faq-question">Gibt es auch duale Studiengänge?</button>
+        <div class="faq-answer">Ja, wir bieten verschiedene duale Studiengänge in Kooperation mit Unternehmen an.</div>
+      </div>
+    
+    </section>
+    
   </main>
 
   <footer class="footer">
     <p>&copy; 2025 Hochschule Bewerbung | Fachhochschule Kiel</p>
   </footer>
-
+  <script>
+    const faqQuestions = document.querySelectorAll(".faq-question");
+  
+    faqQuestions.forEach(question => {
+      question.addEventListener("click", () => {
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>
