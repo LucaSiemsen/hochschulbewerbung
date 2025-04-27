@@ -22,8 +22,6 @@
       <h2 class="section-title">Kontaktformular</h2>
 
       <form class="form" id="kontaktformular">
-
-        
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -36,17 +34,29 @@
 
         <div class="form-group">
           <label for="nachricht">Nachricht:</label>
-          <textarea id="nachricht" name="nachricht" rows="5" required></
-            <script>
-              document.getElementById('kontaktformular').addEventListener('submit', function(event) {
-                event.preventDefault(); // Verhindert normales Absenden
-              
-                alert('Danke für Ihre Nachricht! Wir melden uns bald bei Ihnen.');
-              
-                // Formularfelder zurücksetzen
-                this.reset();
-              });
-              </script>
-              
+          <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-form">Nachricht senden</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hochschule Bewerbung | Fachhochschule Kiel</p>
+  </footer>
+
+  <script>
+    document.getElementById('kontaktformular').addEventListener('submit', function(event) {
+      event.preventDefault(); // verhindert echtes Absenden
+
+      alert('Danke für Ihre Nachricht! Wir melden uns bald bei Ihnen.');
+
+      // Formular zurücksetzen
+      this.reset();
+    });
+  </script>
+  
 </body>
 </html>
