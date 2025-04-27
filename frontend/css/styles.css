@@ -30,12 +30,10 @@ body {
   text-decoration: underline;
 }
 
-/* HERO Bereich mit Hintergrundbild */
 .hero {
-  background-image: url('../assets/fh-kiel_eingang-zum-campus-dietrichsdorf_hannaboerm_klein.jpg');
+  background-image: url('../assets/Fotolia_89369805_Subscription_Monthly_M.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -49,8 +47,9 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 51, 102, 0.4);
+  background: rgba(0, 0, 0, 0.4); /* leicht dunkleres Overlay */
 }
+
 
 .hero-text {
   position: relative;
@@ -228,3 +227,57 @@ body {
 .btn-form:hover {
   background-color: #00509e;
 }
+/* Verbesserte FAQ Styles */
+.section.faq {
+  padding: 60px 20px;
+}
+
+.section.faq .section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-question .arrow {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  margin-right: 12px;
+  display: inline-block; /* Wichtig für sauberes Drehen */
+}
+
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  color: #003366;
+  padding-left: 25px;
+  font-size: 18px;
+}
+

@@ -145,22 +145,29 @@
   </footer>
   <script>
     const questions = document.querySelectorAll(".faq-question");
-    
+  
     questions.forEach(q => {
       q.addEventListener("click", () => {
         const answer = q.nextElementSibling;
         const arrow = q.querySelector(".arrow");
-    
+  
         if (answer.style.maxHeight) {
+          // Schließen
           answer.style.maxHeight = null;
           arrow.style.transform = "rotate(0deg)";
         } else {
+          // Alle anderen schließen
+          document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+          document.querySelectorAll(".arrow").forEach(a => a.style.transform = "rotate(0deg)");
+  
+          // Dieses öffnen
           answer.style.maxHeight = answer.scrollHeight + "px";
           arrow.style.transform = "rotate(90deg)";
         }
       });
     });
-    </script>
+  </script>
+  
     
   
 </body>
