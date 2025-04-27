@@ -4,32 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hochschulbewerbung - Startseite</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="frontend/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Willkommen zur Hochschulbewerbung</h1>
-    <h2>Unsere Hochschule - Jetzt Bewerben!</h2>
 
-    <nav>
-      <a href="index.html">Startseite</a> |
-      <a href="bewerbung.html">Bewerbung</a> |
+  <header class="header">
+    <img src="assets/Fachhochschule_Kiel_Logo_03.2022.svg.png" alt="FH Kiel Logo" class="logo">
+    <nav class="nav">
+      <a href="index.html">Startseite</a>
+      <a href="bewerbung.html">Bewerbung</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Unsere Hochschule</h2>
-      <p>Entdecke spannende Studiengänge und werde Teil unserer Community!</p>
-      <img src="assets/hochschule.jpg" alt="Bild der Hochschule" width="300">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Unsere Studiengänge – Deine Zukunft!</h1>
+      <p>Starte deine Karriere an unserer Hochschule!</p>
+      <a href="bewerbung.html" class="btn">Jetzt Bewerben</a>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="info-section">
+      <img src="assets/fh-kiel_eingang-zum-campus-dietrichsdorf_hannaboerm_klein.jpg" alt="Eingang FH Kiel">
+      <div>
+        <h2>Campusleben</h2>
+        <p>Unser Campus bietet moderne Lernumgebungen und eine tolle Lage an der Schwentine.</p>
+      </div>
+    </section>
+
+    <section class="info-section reverse">
+      <img src="assets/FH_Kiel_Campus_Kiel_Dietrichsdorf_Schwentine_02.jpg" alt="FH Kiel Luftaufnahme">
+      <div>
+        <h2>Internationale Programme</h2>
+        <p>Nutze unsere Erasmus-Partnerschaften und studiere weltweit.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Hochschule Bewerbung</p>
+  <footer class="footer">
+    <p>&copy; 2025 Hochschule Bewerbung | Fachhochschule Kiel</p>
   </footer>
 
-  <script src="js/app.js"></script>
 </body>
 </html>
