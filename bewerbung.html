@@ -3,39 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bewerbung</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Bewerbung - Fachhochschule Kiel</title>
+  <link rel="stylesheet" href="frontend/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Bewerbungsformular</h1>
-    <nav>
-      <a href="index.html">Startseite</a> |
-      <a href="bewerbung.html">Bewerbung</a> |
+
+  <header class="header">
+    <img src="assets/Fachhochschule_Kiel_Logo_03.2022.svg.png" alt="FH Kiel Logo" class="logo">
+    <nav class="nav">
+      <a href="index.html">Startseite</a>
+      <a href="bewerbung.html">Bewerbung</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <main>
-    <form method="POST" action="../backend/bewerbung.php">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
+  <main class="section">
+    <h2 class="section-title">Bewerbungsformular</h2>
+    <form action="backend/bewerbung.php" method="POST" class="form">
+      <label>Vorname:</label><br>
+      <input type="text" name="vorname" required><br><br>
 
-      <label for="studiengang">Studiengang:</label><br>
-      <select id="studiengang" name="studiengang">
-        <option value="informatik">Informatik</option>
-        <option value="wirtschaft">Wirtschaft</option>
-        <option value="design">Design</option>
-      </select><br>
+      <label>Nachname:</label><br>
+      <input type="text" name="nachname" required><br><br>
 
-      <button type="submit">Bewerben</button>
+      <label>E-Mail:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Studiengang:</label><br>
+      <select name="studiengang" required>
+        <option value="">Bitte wählen</option>
+        <option value="Informatik">Informatik</option>
+        <option value="Wirtschaft">Wirtschaft</option>
+        <option value="Design">Design</option>
+      </select><br><br>
+
+      <label>Nachricht:</label><br>
+      <textarea name="nachricht" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Bewerbung absenden</button>
     </form>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Hochschule Bewerbung</p>
+  <footer class="footer">
+    <p>&copy; 2025 Hochschule Bewerbung | Fachhochschule Kiel</p>
   </footer>
 
-  <script src="js/app.js"></script>
 </body>
 </html>

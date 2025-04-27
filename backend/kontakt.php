@@ -1,11 +1,17 @@
 <?php
-// Kontaktformular empfangen
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $nachricht = $_POST['nachricht'];
+include 'db.php';
 
-    // Hier könntest du eine E-Mail versenden oder speichern
+$name = $_POST['name'];
+$email = $_POST['email'];
+$nachricht = $_POST['nachricht'];
 
-    echo "Vielen Dank für deine Nachricht, wir melden uns unter $email!";
+$sql = "INSERT INTO kontakte (name, email, nachricht) VALUES ('$name', '$email', '$nachricht')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Kontaktanfrage erfolgreich gesendet!";
+} else {
+    echo "Fehler: " . $conn->error;
 }
+
+$conn->close();
 ?>

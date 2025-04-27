@@ -1,11 +1,17 @@
 <?php
-// Bewerbung empfangen
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $studiengang = $_POST['studiengang'];
+include 'db.php';
 
-    // Hier könntest du die Daten in die Datenbank speichern
+$vorname = $_POST['vorname'];
+$nachname = $_POST['nachname'];
+$studiengang = $_POST['studiengang'];
 
-    echo "Vielen Dank, $name! Deine Bewerbung für $studiengang wurde erhalten.";
+$sql = "INSERT INTO bewerbungen (vorname, nachname, studiengang) VALUES ('$vorname', '$nachname', '$studiengang')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Bewerbung erfolgreich eingereicht!";
+} else {
+    echo "Fehler: " . $conn->error;
 }
+
+$conn->close();
 ?>
