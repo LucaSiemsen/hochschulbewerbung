@@ -1,8 +1,6 @@
-/* styles.css für Hochschulbewerbung (FH Kiel Stil) */
-
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #ffffff;
     color: #003366;
   }
@@ -11,22 +9,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #ffffff;
     border-bottom: 2px solid #003366;
   }
   
   .logo {
     height: 50px;
-    width: auto;
   }
-  
   
   .nav a {
     color: #003366;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
+    font-size: 16px;
   }
   
   .nav a:hover {
@@ -37,21 +34,20 @@ body {
     background-image: url('../assets/Bildschirmfoto_2025-04-27_um_12.29.55.png');
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
     text-align: center;
+    color: #ffffff;
     position: relative;
   }
-  
   
   .hero::after {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 51, 102, 0.5);
+    background: rgba(0, 51, 102, 0.6);
   }
   
   .hero-text {
@@ -59,15 +55,24 @@ body {
     z-index: 2;
   }
   
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+  }
+  
   .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 24px;
+    padding: 14px 30px;
     background-color: #003366;
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s;
   }
   
@@ -75,46 +80,53 @@ body {
     background-color: #00509e;
   }
   
-  
-  .btn:hover {
-    background-color: #00509e;
+  .section {
+    padding: 60px 40px;
   }
   
-  .content {
-    padding: 50px 20px;
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #003366;
   }
   
-  .info-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
   }
   
-  .info-section.reverse {
-    flex-direction: row-reverse;
+  .card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
-  .info-section img {
-    width: 50%;
-    max-width: 600px;
+  .card img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .info-section div {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  h2 {
-    color: #003366;
   }
   
   .footer {
     background-color: #003366;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 20px;
     font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
   }
   
