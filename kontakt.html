@@ -21,7 +21,8 @@
     <div class="form-container">
       <h2 class="section-title">Kontaktformular</h2>
 
-      <form action="backend/kontakt.php" method="POST" class="form">
+      <form class="form" id="kontaktformular">
+
         
         <div class="form-group">
           <label for="name">Name:</label>
@@ -36,6 +37,16 @@
         <div class="form-group">
           <label for="nachricht">Nachricht:</label>
           <textarea id="nachricht" name="nachricht" rows="5" required></
-
+            <script>
+              document.getElementById('kontaktformular').addEventListener('submit', function(event) {
+                event.preventDefault(); // Verhindert normales Absenden
+              
+                alert('Danke für Ihre Nachricht! Wir melden uns bald bei Ihnen.');
+              
+                // Formularfelder zurücksetzen
+                this.reset();
+              });
+              </script>
+              
 </body>
 </html>
