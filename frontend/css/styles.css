@@ -31,15 +31,15 @@ body {
   }
   
   .hero {
-    background-image: url('../assets/Bildschirmfoto_2025-04-27_um_12.29.55.png');
+    background-image: url('../assets/FH_Kiel_Campus_Kiel_Dietrichsdorf_Schwentine_02.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: #ffffff;
+    text-align: center;
     position: relative;
   }
   
@@ -47,13 +47,14 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 51, 102, 0.6);
+    background: rgba(0, 51, 102, 0.4); /* leicht dunkleres Overlay */
   }
   
   .hero-text {
     position: relative;
     z-index: 2;
   }
+  
   
   .hero h1 {
     font-size: 48px;
