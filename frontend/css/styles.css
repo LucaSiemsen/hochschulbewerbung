@@ -1,31 +1,120 @@
+/* styles.css für Hochschulbewerbung (FH Kiel Stil) */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #003366;
   }
   
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #003366;
   }
   
-  nav a {
-    color: white;
-    margin: 0 10px;
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  
+  .nav a {
+    color: #003366;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
   }
   
-  main {
-    padding: 2rem;
+  .nav a:hover {
+    text-decoration: underline;
   }
   
-  footer {
-    background-color: #333;
-    color: white;
+  .hero {
+    background-image: url('../assets/Bildschirmfoto_2025-04-27_um_12.29.55.png');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    position: relative;
+  }
+  
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 51, 102, 0.5);
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #00509e;
+  }
+  
+  
+  .btn:hover {
+    background-color: #00509e;
+  }
+  
+  .content {
+    padding: 50px 20px;
+  }
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .info-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .info-section img {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .info-section div {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #003366;
+  }
+  
+  .footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
   }
   
