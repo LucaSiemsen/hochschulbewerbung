@@ -131,52 +131,42 @@ body {
     text-decoration: underline;
   }
   /* FAQ Styles */
-.faq-item {
-    margin-bottom: 20px;
+/* Neues FAQ Design */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
   }
   
   .faq-question {
     width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 18px;
-    background-color: #003366;
-    color: #ffffff;
+    background: none;
     border: none;
-    border-radius: 5px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
     cursor: pointer;
-    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .faq-question .arrow {
+    transition: transform 0.3s ease;
+    margin-right: 10px;
   }
   
   .faq-answer {
-    padding: 15px;
-    background: #f1f1f1;
-    display: none;
-    border-radius: 5px;
-  }
-  .form-container {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .form input, .form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-  
-  .form input:focus, .form textarea:focus {
-    border: 1px solid #003366;
-    outline: none;
-  }
-  
-  .contact-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    color: #003366;
+    padding-left: 25px;
+    font-size: 16px;
   }
   
