@@ -1,41 +1,20 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Fachhochschule Kiel</title>
-  <link rel="stylesheet" href="frontend/css/styles.css">
-</head>
-<body>
+<main class="section">
+  <h2 class="section-title">Kontaktformular</h2>
+  <div class="info-section">
+    <div>
+      <form action="backend/kontakt.php" method="POST" class="form">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
 
-  <header class="header">
-    <img src="assets/Fachhochschule_Kiel_Logo_03.2022.svg.png" alt="FH Kiel Logo" class="logo">
-    <nav class="nav">
-      <a href="index.html">Startseite</a>
-      <a href="bewerbung.html">Bewerbung</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+        <label>E-Mail:</label><br>
+        <input type="email" name="email" required><br><br>
 
-  <main class="section">
-    <h2 class="section-title">Kontaktformular</h2>
-    <form action="backend/kontakt.php" method="POST" class="form">
-      <label>Name:</label><br>
-      <input type="text" name="name" required><br><br>
+        <label>Nachricht:</label><br>
+        <textarea name="nachricht" rows="5" required></textarea><br><br>
 
-      <label>E-Mail:</label><br>
-      <input type="email" name="email" required><br><br>
-
-      <label>Nachricht:</label><br>
-      <textarea name="nachricht" rows="5" required></textarea><br><br>
-
-      <button type="submit" class="btn">Nachricht senden</button>
-    </form>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 Hochschule Bewerbung | Fachhochschule Kiel</p>
-  </footer>
-
-</body>
-</html>
+        <button type="submit" class="btn">Nachricht senden</button>
+      </form>
+    </div>
+    <img src="assets/abc_fotogalerie_auslandsaufenthalt_io_fh_kiel_2015-153__f.coring.jpg" alt="Studierende International FH Kiel">
+  </div>
+</main>
